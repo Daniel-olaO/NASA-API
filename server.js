@@ -9,7 +9,6 @@ const HTTP_PORT = process.env.PORT || 3000;
 app.use(cors('*'));
 
 app.get('/', (req,res)=>{
-    console.log(new Date().toUTCString());
     res.json({
         'message':'API Listening'
     });
